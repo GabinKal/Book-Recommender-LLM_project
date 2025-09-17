@@ -1,14 +1,54 @@
-📖 Semantic Book Recommender
+# 📚 Semantic Book Recommender
 
-Un moteur de recommandation de livres basé sur la recherche sémantique et l’analyse émotionnelle.
-Le projet utilise LangChain, Chroma et OpenAI Embeddings pour trouver les livres les plus proches d’une requête utilisateur, et intègre une interface Gradio simple et intuitive.
+## 📌 Description du projet
+Semantic Book Recommender est une application interactive développée avec Gradio qui permet de recommander des livres à partir d’une requête en langage naturel.
+Le projet illustre l’utilisation des LLMs (Large Language Models) et du semantic search appliqués à un cas concret, tout en mettant l’accent sur :
 
-🚀 Fonctionnalités
+la recherche sémantique via embeddings et base vectorielle,
 
-🔎 Recherche sémantique dans les descriptions de livres (via embeddings OpenAI + Chroma).
+la classification zero-shot pour distinguer fiction / non-fiction,
 
-📂 Base de données enrichie (books_with_emotions.csv) contenant métadonnées et scores émotionnels.
+l’analyse émotionnelle pour filtrer les recommandations par tonalité,
 
-🎭 Filtrage par catégorie (Fiction, Nonfiction, etc.) et par ton émotionnel (joie, tristesse, suspense…).
+la simplicité d’utilisation via une interface web.
 
-🖼️ Interface interactive avec Gradio, affichant couvertures et résumés.
+## ⚙️ Fonctionnalités principales
+
+🔎 Recherche sémantique : retrouver les livres les plus proches d’une description utilisateur (via OpenAI embeddings + ChromaDB).
+
+🏷️ Classification zero-shot : catégoriser automatiquement les livres en Fiction ou Non-Fiction.
+
+🎭 Analyse émotionnelle : associer un score émotionnel (joie, tristesse, peur, colère, surprise, neutralité) aux descriptions.
+
+🖼️ Interface Gradio : saisie d’une requête, choix d’une catégorie et d’un ton émotionnel, affichage des recommandations avec couvertures et résumés.
+
+💾 Gestion des dépendances : requirements.txt fourni pour installer facilement l’environnement.
+
+## 🛠️ Technologies utilisées
+
+- Python 3.11
+
+- LangChain
+ (pipeline LLM + text splitters)
+
+- Chroma
+ (vector database)
+
+- OpenAI Embeddings
+ (représentation sémantique)
+
+- Transformers
+ (zero-shot classification & NLP)
+
+- PyTorch
+ (backend Transformers)
+
+Gradio
+ (interface web)
+
+pandas / numpy (traitement des données)
+
+## 🎯 Objectif pédagogique
+
+Ce projet est conçu à des fins éducatives et démonstratives.
+Il illustre les concepts de recherche sémantique, classification zero-shot et analyse des émotions appliqués à la recommandation de contenus.
